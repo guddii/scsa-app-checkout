@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "../../scsa",
+        "noImplicitAny": true,
+        "target": "es5",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "typeRoots": ["src/types"]
+    },
+    "exclude": [
+        "./node_modules"
+    ]
+}
