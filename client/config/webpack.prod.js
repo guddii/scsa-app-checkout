@@ -3,7 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-require('dotenv').config();
+require('dotenv').config({ silent: process.env.NODE_ENV === "production" });
 
 const { dist, src } = require("./path");
 const { preprocessor } = require("./loader");
