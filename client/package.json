@@ -41,7 +41,9 @@
         "typescript": "^3.0.1",
         "webpack": "^4.10.2",
         "webpack-cli": "^3.0.1",
-        "webpack-dev-server": "^3.8.1"
+        "webpack-dev-server": "^3.8.1",
+        "scsa-lib-styles": "https://github.com:guddii/scsa-lib-styles.git",
+        "scsa-lib-messaging": "https://github.com:guddii/scsa-lib-messaging.git"
     },
     "devDependencies": {
         "@types/express": "^4.17.1",

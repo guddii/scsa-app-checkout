@@ -1,10 +1,10 @@
 /* Generics */
 @import "../node_modules/normalize.css/normalize.css";
-@import "../lib/styles/src/generic/border-box.css";
-@import "../lib/styles/src/generic/font-family.css";
-@import "../lib/styles/src/generic/fullBleed-body.css";
+@import "../node_modules/scsa-lib-styles/src/generic/border-box.css";
+@import "../node_modules/scsa-lib-styles/src/generic/font-family.css";
+@import "../node_modules/scsa-lib-styles/src/generic/fullBleed-body.css";
 /* Modules */
-@import "../lib/styles/src/modules/Button.css";
+@import "../node_modules/scsa-lib-styles/src/modules/Button.css";
 
 footer {
     position: fixed;

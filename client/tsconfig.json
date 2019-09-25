@@ -3,11 +3,9 @@
         "outDir": "./dist",
         "noImplicitAny": true,
         "target": "es2015",
-        "allowJs": true,
+        "allowJs": false,
         "esModuleInterop": true,
+        "sourceMap": true,
         "typeRoots": ["src/types"]
-    },
-    "exclude": [
-        "./node_modules"
-    ]
+    }
 }

@@ -1,6 +1,0 @@
-[submodule "client/lib/styles"]
-	path = client/lib/styles
-	url = https://github.com/guddii/scsa-lib-styles
-[submodule "client/lib/messaging"]
-	path = client/lib/messaging
-	url = https://github.com/guddii/scsa-lib-messaging
