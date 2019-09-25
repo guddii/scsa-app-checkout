@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
-        "outDir": "../../scsa",
+        "outDir": "./dist",
         "noImplicitAny": true,
-        "target": "es5",
+        "target": "es2015",
         "allowJs": true,
         "esModuleInterop": true,
         "typeRoots": ["src/types"]
