@@ -13,11 +13,12 @@ export class App extends MessageEndpoint {
         securityChecks: SecurityChecks = new SecurityChecks()
     ) {
         super(endpointProperties, mainProperties, securityChecks);
-        this.button.addEventListener("click", (event: MouseEvent) => {
-            const target: HTMLElement = event.target as HTMLElement;
+        this.button.addEventListener("click", () => {
             this.publish(
-                new Message({ clicked: `${target.innerText} Button` })
+                new Message({ purchase: { products: this.products } })
             );
+            this.products = [];
+            this.button.querySelector("span").innerText = "";
         });
     }
 
