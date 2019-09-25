@@ -29,5 +29,12 @@ export class App extends MessageEndpoint {
                 "span"
             ).innerText = `(${this.products.length})`;
         }
+        if (event.data.body.hasOwnProperty("hello")) {
+            this.publish(
+                new Message({
+                    hello: `Hello Main, ${this.endpointProperties.name} is here.`
+                })
+            );
+        }
     }
 }

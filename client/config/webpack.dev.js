@@ -28,8 +28,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts?$/,
-                use: "ts-loader",
-                exclude: /node_modules/
+                use: "ts-loader"
             },
             {
                 test: preprocessor.fileRegexp,
@@ -61,8 +60,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.DefinePlugin({
-            env: JSON.stringify(process.env)
+        new webpack.EnvironmentPlugin({
+            HOST_MAIN: "http://localhost:3000",
+            HOST_ACCOUNT: "http://localhost:4010",
+            HOST_CATALOGUE: "http://localhost:4020",
+            HOST_CHECKOUT: "http://localhost:4030"
         }),
         new MiniCssExtractPlugin({
             filename: "[name].[hash].css"
