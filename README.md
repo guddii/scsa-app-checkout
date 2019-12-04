@@ -1,2 +1,2 @@
-# scsa-app-checkout
-Self-Contained System for Checkout
+# scsa-app-catalogue
+Self-Contained System for Catalogue
