@@ -1,5 +1,5 @@
 import { SecurityChecks } from "@scsa/messaging";
-import { Applications } from "./Constant";
+import { Applications } from "./Constants";
 import { App } from "./App";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
@@ -9,4 +9,4 @@ const secureContexts = Object.values(Applications).map(
 );
 const securityChecks = new SecurityChecks(secureContexts);
 
-new App(Applications.CHECKOUT, Applications.MAIN, securityChecks);
+new App(Applications.MAIN, Applications.PARENT, securityChecks);

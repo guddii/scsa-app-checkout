@@ -4,7 +4,6 @@ import {
     Message,
     SecurityChecks
 } from "@scsa/messaging";
-import { Applications } from "./Constants";
 
 export class App extends MessageEndpoint {
     button = document.querySelector("button");
