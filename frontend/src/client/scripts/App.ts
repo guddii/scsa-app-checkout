@@ -35,7 +35,7 @@ export class App extends MessageEndpoint {
         if (event.data.body.hasOwnProperty("hello")) {
             this.publish(
               new Message({
-                  hello: `Hello Main, ${this.endpointProperties.name} is here.`
+                  hello: `Hello Main, ${this.endpointProperties.options.text} is here.`
               })
             );
         }
