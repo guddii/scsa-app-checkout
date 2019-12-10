@@ -1,12 +1,15 @@
 @import "~@scsa/styling/src/client/styles/index.css";
 
+.fullh,
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 main {
     flex-grow: 1;
+    position: relative;
 }
 
 footer {
