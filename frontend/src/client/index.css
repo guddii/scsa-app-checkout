@@ -1,18 +1,17 @@
 @import "~@scsa/styling/src/client/styles/index.css";
 
-.fullh,
-body {
+.Utils--fullBleed {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-main {
+.Utils__expand {
     flex-grow: 1;
     position: relative;
 }
 
-footer {
+.Utils__footer {
     background: #ffffff;
     padding: 1rem;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
