@@ -2,4 +2,4 @@ import "../../client/index.css";
 import { Controller } from "./Controller";
 
 
-new Controller();
+const controller = new Controller();
