@@ -1,8 +1,13 @@
 .Utils.Utils--fullBleed
     .Utils__expand
-        slot(name="products")
+        if req && req.query && req.query.slot
+            iframe(src=decodeURIComponent(req.query.slot) class="Socket Socket--fullBleed" data-endpoint="socket" sandbox="allow-scripts allow-same-origin")
+        else if req && req.query && req.query.inc
+            esi:include(src=decodeURIComponent(req.query.inc))
+        else
+            slot(name="products")
         .Logger.Logger--stickyBottom(data-logger)
     .Utils__footer
-        button.Button
+        button.Button(data-purchase)
             | Purchase
             span

@@ -80,7 +80,7 @@ class CheckoutControls extends HTMLElement implements IEventDrivenConsumer {
 
     public handleClick(event) {
         eventDrivenConsumer.publish(
-            new Message({ purchase: { add: ["Product 1"] } })
+            new Message({ add: { products: ["Product 1"] } })
         );
     }
 
