@@ -4,7 +4,7 @@ import {
     MessagingSystem,
     SecurityChecks
 } from "@scsa/messaging";
-import { cfg } from "../../../../../catalogue/frontend/src/config";
+import { cfg } from "../../config";
 import "../../client/index.css";
 import { Controller } from "./Controller";
 
